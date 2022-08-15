@@ -1,2 +1,2 @@
-# bartle_bgroup
+# Bartle .Becoming Group
 Test technique pour Becoming Group - Bartle
