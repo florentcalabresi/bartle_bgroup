@@ -1,0 +1,665 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: normal;
+    src: local('MetaPlus'), url('../fonts/MetaPlus.woff') format('woff');
+}
+@font-face {
+    font-family: 'HurmeGeometric';
+    font-style: bold;
+    font-weight: bold;
+    src: local('HurmeGeometric'), url('../fonts/HurmeGeometricSans1-Black.woff') format('woff');
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    opacity: 0.0;
+}
+a {
+    text-decoration: none;
+}
+.flex {
+    display: flex;
+}
+.flex.justif-center {
+    justify-content: center;
+}
+.button {
+    display: flex;
+    gap: 21px;
+    align-items: center;
+    margin-top: 113px;
+}
+.button a {
+    border: 2px solid #000000;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.button a span {
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+.button a svg {
+    position: relative;
+    left: 10px;
+}
+.button span {
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+
+    display: flex;
+    align-items: center;
+
+    color: #989898;
+}
+header {
+    background-color: #FFD200;
+    height: 943px;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 67px 81px 0;
+    position: fixed;
+    width: calc(100% - 81px * 2);
+    background: transparent;
+    background: linear-gradient(0deg, transparent 0%, transparent 41%, transparent 100%);
+    transition: 0.2s all ease-in-out;
+}
+header nav.gradient {
+    background: white;
+    padding-bottom: 2rem;
+    z-index: 99;
+}
+nav .right .menu {
+    display: flex;
+    gap: 25px;
+}
+nav .right .menu li {
+    list-style: none;
+}
+nav .right .menu li a {
+    color: #000000;
+    font-family: 'MetaPlus';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+nav .right {
+    display: flex;
+    gap: 56px;
+}
+header .pres1 {
+    margin: 0px 0 0px 122px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 224px;
+}
+header .pres1 .titles h1 {
+    font-family: 'HurmeGeometric';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 110px;
+    line-height: 72px;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+header .pres1 .titles h2 {
+    font-family: 'HurmeGeometric';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 64px;
+    color: white;
+    text-transform: uppercase;
+}
+header .pres1 .news {
+    width: 345px;
+    font-family: 'MetaPlus';
+}
+header .pres1 .news h6 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+header .pres1 .news h6::after {
+    content: '';
+    display: flex;
+    border: 1px solid #000000;
+    position: relative;
+    top: 6px;
+}
+header .pres1 .news .item {
+    margin-top: 23px;
+}
+header .pres1 .news .item .title h4 {
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    margin: 0;
+}
+header .pres1 .news .item span.date {
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: flex-end;
+}
+header .pres1 .news .item p {
+    width: 222px;
+    height: 128px;
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+}
+header .pres1 .news .item svg.arrow {
+    margin-top: 20px;
+    margin: 20px 0 32px 0;
+}
+header .mask_bartle {
+    width: 100%;
+    height: 100%;
+    background: url(../../assets/img/bartleMask.svg);
+    background-size: cover;
+    background-position-y: -13.5rem;
+}
+header .mask_bartle_1::before {
+    content: '';
+    height: 100%;
+    background-size: cover;
+    background: url(../../assets/img/pattern.svg);
+    mix-blend-mode: color-dodge;
+}
+header .arrow_bottom {
+    position: absolute;
+    width: fit-content;
+    height: 132px;
+    left: 720px;
+    top: 487px;
+}
+section.about {
+    background: url(../../assets/img/bartle_1.svg);
+    background-size: cover;
+    height: 1262px;
+    padding: 148px 122px;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+section.about .flex {
+    gap: 142px;
+}
+section.about span.left {
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 48px;
+    width: 588px;
+    height: 192px;
+    display: block;
+}
+section.about span.right {
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    width: 466px;
+    height: 160px;
+    display: block;
+}
+section.activities {
+    display: flex;
+    padding: 213px 122px 167px;
+    gap: 260px;
+}
+section.activities .menu {
+    display: flex;
+    gap: 132px;
+    flex-direction: column; 
+}
+section.activities ul.tabs {
+    display: flex;
+    gap: 30px;
+}
+section.activities ul.tabs li {
+    list-style: none;
+}
+section.activities ul.tabs li a {
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    opacity: 0.2;
+}
+section.activities ul.tabs li a.active {
+    opacity: 1;
+}
+section.activities ul.tabs li a.active::after {
+    content: '';
+    width: 18px;
+    height: 3px;
+    left: 49px;
+    top: 25px;
+    background: #AFFF00;
+    display: flex;
+    margin-top: 3px;
+}
+section.activities h1 {
+    display: block;
+    font-family: 'HurmeGeometric';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 64px;
+    text-transform: uppercase;
+    width: 588px;
+    height: 140px;
+}
+section.activities span {
+    display: block;
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    width: 463px;
+    height: 96px;
+    opacity: 0.8;
+    margin-top: 20px;
+}
+section.activities .button {
+    display: block;
+    margin-top: 60px;
+    height: 0px;
+    width: fit-content;
+}
+section.activities .button a {
+    padding: 10px 30px;
+}
+section.activities .button span {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 0;
+}
+section.notes {
+    background: #00E7CF;
+}
+section.notes .head {
+        background: url(../../assets/img/bg_notes.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 187px;
+}
+section.notes .titles {
+    padding: 187px 363px 150px 246px;
+}
+section.notes .titles h1 {
+    font-family: 'HurmeGeometric';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 64px;
+    text-transform: uppercase;
+}
+section.notes .titles h2 {
+    width: 831px;
+    margin-top: 20px;
+    font-family: 'HurmeGeometric';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+section.notes .description {
+    display: flex;
+    padding-left: 246px;
+    padding-right: 122px;
+    align-items: end;
+    gap: 141px;
+}
+section.notes .description .left {
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 48px;
+    display: block;
+    width: 465px;
+}
+section.notes .description .right {
+    display: block;
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    display: flex;
+    align-items: flex-end;
+    width: 466px;
+}
+section.notes .list {
+    padding: 164px 111px 0 133px;
+}
+section.notes .item .content .tag {
+    background: #F9F9F9;
+    border-radius: 5px;
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 6px 9px;
+}
+section.notes .item .content .dateAndTimeRead {
+    display: flex;
+    gap: 30px;
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 30px;
+}
+section.notes .item.first {
+    display: flex;
+    gap: 66px;
+}
+section.notes .item.first .content h1 {
+    display: block;
+    width: 345px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'HurmeGeometric';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 42px;
+}
+section.notes .item.first .thumbnail img {
+    width: 785px;
+    height: 540px;
+}
+section.notes .item.first .unpopular_bartle {
+    margin-top: 96px;
+    display: flex;
+    gap: 21px;
+}
+section.notes .item.first .unpopular_bartle h4 {
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+}
+section.notes .range3 {
+    border-top: 1px solid #FFFFFF;
+    margin-top: 83px;
+    padding: 83px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 40.5px;
+    grid-row-gap: 0px;
+}
+section.notes .range3 .item:not(:first-child) {
+    border-left: 1px solid #FFFFFF;
+    padding-left: 40.5px;
+}
+section.notes .button {
+    margin: 0px 0 136px;
+}
+section.join {
+    position: relative;
+}
+section.join #j1 {
+    position: absolute;
+    width: 127px;
+    height: 188px;
+    left: 218px;
+    top: -38px;
+}
+section.join #j2 {
+    position: absolute;
+    width: 360px;
+    height: 541px;
+    right: 56px;
+    top: 0;
+}
+section.join #j3 {
+    position: absolute;
+    width: 345px;
+    height: 512px;
+    top: 448px;
+}
+section.join #j4 {
+    position: absolute;
+    width: 831px;
+    height: 623.72px;
+    right: 0;
+    top: 1047px;
+}
+section.join .content {
+    padding: 220px 319px 773px 458px;
+}
+section.join .content .titles h1 {
+    font-family: 'HurmeGeometric';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 110px;
+    line-height: 100px;
+    text-transform: uppercase;
+    color: #FFD200;
+    display: flex;
+    flex-direction: column;
+}
+section.join .content .titles h2 {
+    font-family: 'HurmeGeometric';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: #000000;
+}
+section.join .content span.body {
+    font-family: 'MetaPlus';
+    display: block;
+    margin: 71px 0 60px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    width: 465px;
+    height: 160px;
+}
+section.join .content .button {
+    margin: 0;
+}
+section.contact {
+    background: #667FA0;
+    padding: 136px 127px;
+    position: relative;
+    top: 0;
+    display: flex;
+    gap: 23px;
+}
+section.contact .titles h1 {
+    font-family: 'HurmeGeometric';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 110px;
+    line-height: 100px;
+    text-transform: uppercase;
+    color: #00E7CF;
+}
+section.contact .titles h3 {
+    font-family: 'HurmeGeometric';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+section.contact .body {
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    width: 458px;
+    height: 120px;
+    background: url(../../assets/img/contact.svg);
+}
+section.contact .body .button {
+    margin-top: 45px;
+    display: flex;
+    justify-content: flex-start;
+}
+section.contact .body .button a {
+    border: 1px solid white;
+}
+section.contact .body .button a span {
+    color: white;
+}
+footer {
+    background: black;
+    padding: 161px 254px 103px 245px;
+    display: flex;
+    gap: 151px;
+    flex-direction: column;
+    position: relative;
+}
+footer .head {
+    display: flex;
+    gap: 120px;
+}
+footer .col {
+    display: flex;
+    flex-direction: column;
+}
+footer .logo {
+    width: 120px;
+    height: 32px;
+    margin-bottom: 20px;
+}
+footer .history {
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    width: 342px;
+    height: 66px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+footer ul.social {
+    display: flex;
+    gap: 71px;
+    margin-bottom: 30px;
+}
+footer li {
+    list-style: none;
+}
+footer ul.social li a {
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: white;
+}
+footer ul.social li:not(:last-child):after {
+    content: '/';
+    color: white;
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    position: relative;
+    left: 30px;
+}
+footer span.location {
+    display: block;
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    display: flex;
+    align-items: flex-end;
+    width: 464px;
+    height: 133px;
+    color: #FFFFFF;
+}
+footer ul.social li a {
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: white;
+}
+footer .links_utils {
+    gap: 20px;
+}
+footer .links_utils li a {
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: white;
+}
+footer .legals {
+    display: flex;
+    gap: 65px;
+    justify-content: center;
+}
+footer .legals li a {
+    font-family: 'MetaPlus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    width: 202px;
+}
