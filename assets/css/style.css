@@ -37,14 +37,32 @@ a {
     align-items: center;
     margin-top: 113px;
 }
+.button a svg {
+    width: 0;
+    transition: 0.2s all ease-in-out;
+}
+.button a:hover {
+    background: black;
+}
+.button a:hover span {
+    color: white;
+}
+.button a:hover svg {
+    width: 40px;
+}
+.button a:hover svg path {
+    fill: white;
+}
 .button a {
     border: 2px solid #000000;
+    background: transparent;
     border-radius: 100px;
     display: flex;
     align-items: center;
     text-align: center;
     text-decoration: none;
     padding: 10px 20px;
+    transition: 0.2s all ease-in-out;
 }
 .button a span {
     font-family: 'MetaPlus';
@@ -57,6 +75,10 @@ a {
 .button a svg {
     position: relative;
     left: 10px;
+}
+.button a svg path{
+    fill: black;
+    transition: 0.2s all ease-in-out;
 }
 .button span {
     font-family: 'MetaPlus';
@@ -88,6 +110,7 @@ header nav.gradient {
     background: white;
     padding-bottom: 2rem;
     z-index: 99;
+    box-shadow: 1px -4px 12px;
 }
 nav .right .menu {
     display: flex;
@@ -95,6 +118,7 @@ nav .right .menu {
 }
 nav .right .menu li {
     list-style: none;
+    position: relative;
 }
 nav .right .menu li a {
     color: #000000;
@@ -102,6 +126,22 @@ nav .right .menu li a {
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
+}
+nav .right .menu li:before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 5px;
+    background: #667FA0;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    border-radius: 8px;
+    transition: width 0.2s ease-in-out;
+}
+nav .right .menu li:hover:before {
+    content: '';
+    width: 60px;
 }
 nav .right {
     display: flex;
@@ -205,6 +245,12 @@ header .arrow_bottom {
     height: 132px;
     left: 720px;
     top: 487px;
+}
+.main {
+    background: white;
+}
+section.categ {
+    opacity: 0.0;
 }
 section.about {
     background: url(../../assets/img/bartle_1.svg);
@@ -374,6 +420,15 @@ section.notes .description .right {
 section.notes .list {
     padding: 164px 111px 0 133px;
 }
+section.notes svg.ampule {
+    -webkit-filter: drop-shadow( 3px 3px 3px transparent);
+    filter: drop-shadow( 3px 3px 3px transparent);
+    transition: filter 0.3s ease-in-out;
+}
+section.notes svg.ampule:hover {
+    -webkit-filter: drop-shadow( 3px 3px 3px rgb(228, 243, 189));
+    filter: drop-shadow( 3px 3px 3px rgb(228, 243, 189));
+}
 section.notes .item .content .tag {
     background: #F9F9F9;
     border-radius: 5px;
@@ -437,7 +492,7 @@ section.notes .range3 {
 }
 section.notes .range3 .item:not(:first-child) {
     border-left: 1px solid #FFFFFF;
-    padding-left: 40.5px;
+    padding-left: 125.5px;
 }
 section.notes .button {
     margin: 0px 0 136px;
@@ -471,6 +526,13 @@ section.join #j4 {
     height: 623.72px;
     right: 0;
     top: 1047px;
+    z-index: 9;
+}
+section.join #jb {
+    position: absolute;
+    right: 0;
+    bottom: 27rem;
+    z-index: 1;
 }
 section.join .content {
     padding: 220px 319px 773px 458px;
@@ -558,6 +620,9 @@ section.contact .body .button a {
 section.contact .body .button a span {
     color: white;
 }
+section.contact .body .button a svg path{
+    fill: white;
+}
 footer {
     background: black;
     padding: 161px 254px 103px 245px;
@@ -597,6 +662,7 @@ footer ul.social {
 }
 footer li {
     list-style: none;
+    position: relative;
 }
 footer ul.social li a {
     font-family: 'MetaPlus';
@@ -638,6 +704,18 @@ footer ul.social li a {
     line-height: 32px;
     color: white;
 }
+footer ul.social li a i {
+    transition: 0.2s color ease-in-out;
+}
+footer ul.social li:hover a#linkedin i {
+    color: #0077B5;
+}
+footer ul.social li:hover a#twitter i {
+    color: #1DA1F2;
+}
+footer ul.social li:hover a#youtube i {
+    color: #FF0000;
+}
 footer .links_utils {
     gap: 20px;
 }
@@ -648,6 +726,22 @@ footer .links_utils li a {
     font-size: 32px;
     line-height: 32px;
     color: white;
+}
+footer .links_utils li:before {
+    content: '';
+    display: flex;
+    width: 10px;
+    height: 100%;
+    background: #667FA0;
+    position: absolute;
+    left: -18px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+footer .links_utils li:hover:before {
+    content: '';
+    opacity: 1;
 }
 footer .legals {
     display: flex;
@@ -662,4 +756,20 @@ footer .legals li a {
     line-height: 22px;
     color: #FFFFFF;
     width: 202px;
+}
+footer .legals li:before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 5px;
+    background: #667FA0;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    border-radius: 8px;
+    transition: width 0.2s ease-in-out;
+}
+footer .legals li:hover:before {
+    content: '';
+    width: 60px;
 }
