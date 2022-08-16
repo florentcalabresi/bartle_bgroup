@@ -1,7 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+
 @font-face {
     font-family: 'MetaPlus';
     font-style: normal;
@@ -13,6 +10,11 @@
     font-style: bold;
     font-weight: bold;
     src: local('HurmeGeometric'), url('../fonts/HurmeGeometricSans1-Black.woff') format('woff');
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'MetaPlus';
 }
 html {
     scroll-behavior: smooth;
@@ -30,6 +32,9 @@ a {
 }
 .flex.justif-center {
     justify-content: center;
+}
+section.categ {
+    opacity: 0.0;
 }
 .button {
     display: flex;
@@ -65,7 +70,6 @@ a {
     transition: 0.2s all ease-in-out;
 }
 .button a span {
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -81,7 +85,6 @@ a {
     transition: 0.2s all ease-in-out;
 }
 .button span {
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -122,7 +125,6 @@ nav .right .menu li {
 }
 nav .right .menu li a {
     color: #000000;
-    font-family: 'MetaPlus';
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
@@ -175,7 +177,6 @@ header .pres1 .titles h2 {
 }
 header .pres1 .news {
     width: 345px;
-    font-family: 'MetaPlus';
 }
 header .pres1 .news h6 {
     font-weight: 700;
@@ -193,7 +194,6 @@ header .pres1 .news .item {
     margin-top: 23px;
 }
 header .pres1 .news .item .title h4 {
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -201,7 +201,6 @@ header .pres1 .news .item .title h4 {
     margin: 0;
 }
 header .pres1 .news .item span.date {
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -214,7 +213,6 @@ header .pres1 .news .item span.date {
 header .pres1 .news .item p {
     width: 222px;
     height: 128px;
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -249,9 +247,6 @@ header .arrow_bottom {
 .main {
     background: white;
 }
-section.categ {
-    opacity: 0.0;
-}
 section.about {
     background: url(../../assets/img/bartle_1.svg);
     background-size: cover;
@@ -264,7 +259,6 @@ section.about .flex {
     gap: 142px;
 }
 section.about span.left {
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 400;
     font-size: 34px;
@@ -274,7 +268,6 @@ section.about span.left {
     display: block;
 }
 section.about span.right {
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -301,7 +294,6 @@ section.activities ul.tabs li {
     list-style: none;
 }
 section.activities ul.tabs li a {
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 550;
     font-size: 18px;
@@ -335,7 +327,6 @@ section.activities h1 {
 }
 section.activities span {
     display: block;
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -398,24 +389,22 @@ section.notes .description {
     gap: 141px;
 }
 section.notes .description .left {
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 400;
     font-size: 34px;
-    line-height: 48px;
+    line-height: 40px;
     display: block;
-    width: 465px;
+    width: 318px;
 }
 section.notes .description .right {
     display: block;
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;
     display: flex;
     align-items: flex-end;
-    width: 466px;
+    width: 328px;
 }
 section.notes .list {
     padding: 164px 111px 0 133px;
@@ -432,7 +421,6 @@ section.notes svg.ampule:hover {
 section.notes .item .content .tag {
     background: #F9F9F9;
     border-radius: 5px;
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -442,7 +430,6 @@ section.notes .item .content .tag {
 section.notes .item .content .dateAndTimeRead {
     display: flex;
     gap: 30px;
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -474,7 +461,6 @@ section.notes .item.first .unpopular_bartle {
     gap: 21px;
 }
 section.notes .item.first .unpopular_bartle h4 {
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -548,6 +534,9 @@ section.join .content .titles h1 {
     display: flex;
     flex-direction: column;
 }
+section.join .content .titles h1 p {
+    font-family: 'HurmeGeometric';
+}
 section.join .content .titles h2 {
     font-family: 'HurmeGeometric';
     font-style: normal;
@@ -558,7 +547,6 @@ section.join .content .titles h2 {
     color: #000000;
 }
 section.join .content span.body {
-    font-family: 'MetaPlus';
     display: block;
     margin: 71px 0 60px;
     font-style: normal;
@@ -575,6 +563,7 @@ section.contact {
     background: #667FA0;
     padding: 136px 127px;
     position: relative;
+    z-index: 9;
     top: 0;
     display: flex;
     gap: 23px;
@@ -598,7 +587,6 @@ section.contact .titles h3 {
     color: #FFFFFF;
 }
 section.contact .body {
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -645,7 +633,6 @@ footer .logo {
     margin-bottom: 20px;
 }
 footer .history {
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -665,7 +652,6 @@ footer li {
     position: relative;
 }
 footer ul.social li a {
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -675,7 +661,6 @@ footer ul.social li a {
 footer ul.social li:not(:last-child):after {
     content: '/';
     color: white;
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -685,7 +670,6 @@ footer ul.social li:not(:last-child):after {
 }
 footer span.location {
     display: block;
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -697,7 +681,6 @@ footer span.location {
     color: #FFFFFF;
 }
 footer ul.social li a {
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -720,7 +703,6 @@ footer .links_utils {
     gap: 20px;
 }
 footer .links_utils li a {
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -749,7 +731,6 @@ footer .legals {
     justify-content: center;
 }
 footer .legals li a {
-    font-family: 'MetaPlus';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -772,4 +753,225 @@ footer .legals li:before {
 footer .legals li:hover:before {
     content: '';
     width: 60px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width : 1280px) {
+    header nav {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 15px
+    }
+    header nav.gradient {
+        background: transparent;
+        box-shadow: none;
+    }
+    header nav .right {
+        flex-direction: column;
+    }
+    header nav .right .menu {
+        flex-direction: column;
+    }
+    section.categ {
+        opacity: 1;
+    }
+    .main {
+        background: transparent;
+    }
+    header .pres1 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 40px 0 0 ;
+        padding: 48px;
+        position: relative;
+    }
+    header .pres1 .news {
+        width: 332px;
+        position: absolute;
+        top: 9rem;
+        right: 0rem;
+    }
+
+    header .pres1 .arrow,header .arrow_bottom {
+        display: none;
+    }
+    header .pres1 .titles h1 {
+        font-size: 70px;
+        line-height: 20px;
+    }
+    header .pres1 .titles h2 {
+        font-size: 24px;
+        line-height: 64px;
+    }
+    header .mask_bartle {
+        display: none;
+    }
+    section.about .flex {
+        flex-direction: column;
+        gap: 0px;
+    }
+    section.about img {
+        width: 300px;
+    }
+    section.about {
+        padding: 42px 32px;
+    }
+    section.about span.left {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 31px;
+        width: 338px;
+        height: 152px;
+    }
+    section.about span.right {
+        font-size: 14px;
+        line-height: 25px;
+        width: 327px;
+    }
+    section.activities {
+        gap: 80px;
+        padding: 40px 35px 100px;
+        flex-direction: column;
+    }
+    section.activities .menu {
+        gap: 30px;
+    }
+    section.activities h1 {
+        font-size: 37px;
+        line-height: 34px;
+        width: 342px;
+        height: 70px;
+    }
+    section.activities span {
+        width: 332px;
+    }
+    section.activities .button {
+        width: 250px;
+    }
+
+    section.notes .titles{
+        padding: 87px 32px 32px;
+    }
+    section.notes .titles h1 {
+        font-size: 54px;
+        line-height: 20px;
+    }
+    section.notes .titles h2 {
+        width: 290px;
+        font-size: 26px;
+        line-height: 39px;
+    }
+    section.notes .description {
+        padding-left: 32px;
+        align-items: start;
+        gap: 40px;
+        flex-direction: column;
+        padding-right: 32px ;
+    }
+    section.notes .description .left {
+        width: 318px;
+    }
+    section.notes .description .right {
+        width: 328px;
+    }
+    section.notes .list {
+        padding: 64px 32px;
+    }
+    section.notes .item.first .thumbnail img {
+        width: 330px;
+        height: 250px;
+    }
+    section.notes .item.first {
+        flex-direction: column;
+    }
+    section.notes .range3 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 40.5px;
+    }
+    section.notes .range3 .item:not(:first-child) {
+        border-left: 0px;
+        padding-left: 0;
+    }
+    section.notes .range3 .item:not(:last-child) {
+        border-left: 0px;
+        border-bottom: 1px solid #FFFFFF;
+        padding-left: 0;
+        padding-bottom: 40.5px;
+    }
+    section.notes .item.first .unpopular_bartle {
+        margin-top: 34px;
+    }
+    section.notes .item.first .content h1 {
+        width: 300px;
+        font-size: 35px;
+    }
+    section.join img {
+        display: none;
+    }
+    section.join .content {
+        padding: 121px 32px;
+    }
+    section.join .content .titles h1 {
+        font-size: 64px;
+        line-height: 55px;
+    }
+    section.join .content .titles h2 {
+        font-size: 36px;
+        line-height: 38px;
+    }
+    section.join .content span.body {
+        margin: 30px 0px;
+        font-size: 19px;
+        line-height: 25px;
+        width: 330px;
+        height: 102px;
+    }
+    section.contact {
+        padding: 50px 32px 104px ;
+        flex-direction: column;
+    }
+    section.contact .body .button {
+        margin-top: 22px;
+    }
+    section.contact .titles h1 {
+        font-size: 50px;
+        line-height: 28px;
+    }
+    section.contact .titles h3 {
+        font-size: 36px;
+        line-height: 56px;
+    }
+    section.contact .body {
+        font-size: 18px;
+        line-height: 25px;
+        width: 342px;
+    }
+    footer {
+        padding: 84px 32px 84px 32px;
+    }
+    footer .head {
+        gap: 60px;
+        flex-direction: column;
+    }
+    footer .legals {
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer ul.social {
+        gap: 18px;
+        justify-content: center ;
+    }
+    footer ul.social li:not(:last-child):after {
+        left: 6px ;
+    }
+    footer ul.social li a {
+        font-size: 18px;
+    }
+    footer span.location {
+        width: 336px;
+    }
 }

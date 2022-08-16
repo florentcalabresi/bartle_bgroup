@@ -20,7 +20,7 @@ sections.forEach((el) => {
     setInterval(() => {
         if ($("section.categ#"+el).isInViewport())
             if($('section.categ#'+el).css('opacity') == 0) 
-                $("section.categ#"+el).animate({opacity: 1}, 1000)
+                $("section.categ#"+el).animate({opacity: 1}, 1200)
     })
 })
 
