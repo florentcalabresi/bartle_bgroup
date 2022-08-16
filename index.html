@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
         <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/app.js"></script>
     </head>
     <body>
         <header>
@@ -20,7 +21,7 @@
                     </svg>                        
                 </a>
                 <div class="right">
-                    <div class="menu">
+                    <ul class="menu">
                         <li>
                             <a href="#bartle">Chez Bartle</a>
                         </li>
@@ -39,7 +40,7 @@
                         <li>
                             <a href="#join">Nous rejoindre</a>
                         </li>
-                    </div>
+                    </ul>
                     <div class="search">
                         <a href="#">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,17 +78,17 @@
         </header>
         <div class="main">
             <section class="categ about" id="about">
-                <img src="assets/img/bartle_blue.svg" />        
+                <img src="assets/img/bartle_blue.svg" alt="bartle_blue" />        
                 <div class="flex">
                     <div class="col">
-                        <span class="left">
+                        <h5 class="left">
                             est un cabinet pluridisciplinaire et indépendant de conseil en management qui aide les décideurs à retrouver l’énergie d’entreprendre.
-                        </span>
+                        </h5>
                     </div>
                     <div class="col">
-                        <span class="right">
+                        <h6 class="right">
                             Il combine efficacement expertise sectorielle, approche décomplexée de l’entreprise et fraîcheur de vue pour faire évoluer de manière souple et efficace leur modèle économique et sociétal en assurant des résultats opérationnels tangibles.
-                        </span>                
+                        </h6>                
                     </div>
                 </div>    
                 <div class="button">
@@ -108,7 +109,7 @@
                         <li><a href="#">03</a></li>
                         <li><a href="#">04</a></li>
                     </ul>
-                    <img class="animate__animated animate__pulse animate__slow animate__infinite" src="assets/img/activities.svg" />                   
+                    <img class="animate__animated animate__pulse animate__slow animate__infinite" alt="activities" src="assets/img/activities.svg" />                   
                 </div>
                 <div class="col infos">
                     <h1>Un terrain de jeu sérieux</h1>
@@ -143,7 +144,7 @@
                 <div class="list">
                     <div class="item first">
                         <div class="thumbnail">
-                            <img src="assets/img/notes.png" />
+                            <img src="assets/img/notes.png" alt="notes" />
                         </div>
                         <div class="content">
                             <span class="tag">#Croissance.</span>
@@ -157,7 +158,7 @@
                             </div>
                             <div class="unpopular_bartle">
                                 <svg class="ampule" width="31" height="52" viewBox="0 0 31 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_1_640)">
+                                    <g clip-path="url(#ampule1)">
                                         <path d="M6.52199 39.2091C6.26142 39.2091 6.00852 39.2091 5.75562 39.2474C5.75562 39.5003 5.75562 39.7532 5.75562 40.0138C5.7637 42.3955 6.71341 44.6774 8.39754 46.3615C10.0817 48.0456 12.3635 48.9953 14.7452 49.0034C14.9981 49.0034 15.251 49.0034 15.5116 48.9651C15.5116 48.7199 15.5499 48.467 15.5499 48.1987C15.5418 45.8104 14.5868 43.5228 12.8944 41.8375C11.202 40.1523 8.91034 39.2071 6.52199 39.2091V39.2091Z" fill="#AFFF00" stroke="black" stroke-width="2.07688" stroke-miterlimit="10" stroke-linecap="round"/>
                                         <path d="M24.5243 37.0709C24.7772 37.0709 25.0301 37.0709 25.2907 37.0709C25.2907 37.3162 25.329 37.5691 25.329 37.8373C25.3331 39.0283 25.1012 40.2083 24.6469 41.3093C24.1925 42.4102 23.5246 43.4103 22.6817 44.2518C21.8388 45.0932 20.8376 45.7594 19.7359 46.2119C18.6342 46.6645 17.4538 46.8943 16.2628 46.8882C16.0022 46.8882 15.7493 46.8882 15.4964 46.8499C15.4964 46.597 15.4581 46.3441 15.4581 46.0835C15.4591 44.8957 15.6946 43.7198 16.1513 42.6233C16.6079 41.5268 17.2766 40.5313 18.119 39.6939C18.9614 38.8565 19.9609 38.1937 21.0601 37.7436C22.1593 37.2935 23.3365 37.0649 24.5243 37.0709V37.0709Z" fill="#AFFF00" stroke="black" stroke-width="2.07688" stroke-miterlimit="10" stroke-linecap="round"/>
                                         <path d="M15.5037 33.9824V52" stroke="black" stroke-width="2.07688" stroke-miterlimit="10"/>
@@ -165,14 +166,14 @@
                                         <path d="M14.4999 17.49L10.4994 17.1757L18.761 8.92184L16.8757 15.0299L20.8762 15.3441L12.6146 23.6057L14.4999 17.49Z" fill="white" stroke="black" stroke-width="1.66304" stroke-miterlimit="10"/>
                                     </g>
                                     <defs>
-                                        <clipPath id="clip0_1_640">
+                                        <clipPath id="ampule1">
                                             <rect width="31" height="51.2784" fill="white" transform="translate(0 0.721619)"/>
                                         </clipPath>
                                     </defs>
                                 </svg>
                                 <div class="col">
                                     <h4>
-                                        <b>(un) popular opinion</b><p />
+                                        <b>(un) popular opinion</b><br/>
                                         Bartle
                                     </h4>
                                 </div>
@@ -193,7 +194,7 @@
                                 </div>
                                 <div class="unpopular_bartle">
                                     <svg class="ampule" width="31" height="52" viewBox="0 0 31 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_1_640)">
+                                        <g clip-path="url(#ampule2)">
                                             <path d="M6.52199 39.2091C6.26142 39.2091 6.00852 39.2091 5.75562 39.2474C5.75562 39.5003 5.75562 39.7532 5.75562 40.0138C5.7637 42.3955 6.71341 44.6774 8.39754 46.3615C10.0817 48.0456 12.3635 48.9953 14.7452 49.0034C14.9981 49.0034 15.251 49.0034 15.5116 48.9651C15.5116 48.7199 15.5499 48.467 15.5499 48.1987C15.5418 45.8104 14.5868 43.5228 12.8944 41.8375C11.202 40.1523 8.91034 39.2071 6.52199 39.2091V39.2091Z" fill="#AFFF00" stroke="black" stroke-width="2.07688" stroke-miterlimit="10" stroke-linecap="round"/>
                                             <path d="M24.5243 37.0709C24.7772 37.0709 25.0301 37.0709 25.2907 37.0709C25.2907 37.3162 25.329 37.5691 25.329 37.8373C25.3331 39.0283 25.1012 40.2083 24.6469 41.3093C24.1925 42.4102 23.5246 43.4103 22.6817 44.2518C21.8388 45.0932 20.8376 45.7594 19.7359 46.2119C18.6342 46.6645 17.4538 46.8943 16.2628 46.8882C16.0022 46.8882 15.7493 46.8882 15.4964 46.8499C15.4964 46.597 15.4581 46.3441 15.4581 46.0835C15.4591 44.8957 15.6946 43.7198 16.1513 42.6233C16.6079 41.5268 17.2766 40.5313 18.119 39.6939C18.9614 38.8565 19.9609 38.1937 21.0601 37.7436C22.1593 37.2935 23.3365 37.0649 24.5243 37.0709V37.0709Z" fill="#AFFF00" stroke="black" stroke-width="2.07688" stroke-miterlimit="10" stroke-linecap="round"/>
                                             <path d="M15.5037 33.9824V52" stroke="black" stroke-width="2.07688" stroke-miterlimit="10"/>
@@ -201,14 +202,14 @@
                                             <path d="M14.4999 17.49L10.4994 17.1757L18.761 8.92184L16.8757 15.0299L20.8762 15.3441L12.6146 23.6057L14.4999 17.49Z" fill="white" stroke="black" stroke-width="1.66304" stroke-miterlimit="10"/>
                                         </g>
                                         <defs>
-                                            <clipPath id="clip0_1_640">
+                                            <clipPath id="ampule2">
                                                 <rect width="31" height="51.2784" fill="white" transform="translate(0 0.721619)"/>
                                             </clipPath>
                                         </defs>
                                     </svg>
                                     <div class="col">
                                         <h4>
-                                            <b>(un) popular opinion</b><p />
+                                            <b>(un) popular opinion</b><br/>
                                             Banques et Assurances
                                         </h4>
                                     </div>
@@ -228,7 +229,7 @@
                                 </div>
                                 <div class="unpopular_bartle">
                                     <svg class="ampule" width="31" height="52" viewBox="0 0 31 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_1_640)">
+                                        <g clip-path="url(#ampule3)">
                                             <path d="M6.52199 39.2091C6.26142 39.2091 6.00852 39.2091 5.75562 39.2474C5.75562 39.5003 5.75562 39.7532 5.75562 40.0138C5.7637 42.3955 6.71341 44.6774 8.39754 46.3615C10.0817 48.0456 12.3635 48.9953 14.7452 49.0034C14.9981 49.0034 15.251 49.0034 15.5116 48.9651C15.5116 48.7199 15.5499 48.467 15.5499 48.1987C15.5418 45.8104 14.5868 43.5228 12.8944 41.8375C11.202 40.1523 8.91034 39.2071 6.52199 39.2091V39.2091Z" fill="#AFFF00" stroke="black" stroke-width="2.07688" stroke-miterlimit="10" stroke-linecap="round"/>
                                             <path d="M24.5243 37.0709C24.7772 37.0709 25.0301 37.0709 25.2907 37.0709C25.2907 37.3162 25.329 37.5691 25.329 37.8373C25.3331 39.0283 25.1012 40.2083 24.6469 41.3093C24.1925 42.4102 23.5246 43.4103 22.6817 44.2518C21.8388 45.0932 20.8376 45.7594 19.7359 46.2119C18.6342 46.6645 17.4538 46.8943 16.2628 46.8882C16.0022 46.8882 15.7493 46.8882 15.4964 46.8499C15.4964 46.597 15.4581 46.3441 15.4581 46.0835C15.4591 44.8957 15.6946 43.7198 16.1513 42.6233C16.6079 41.5268 17.2766 40.5313 18.119 39.6939C18.9614 38.8565 19.9609 38.1937 21.0601 37.7436C22.1593 37.2935 23.3365 37.0649 24.5243 37.0709V37.0709Z" fill="#AFFF00" stroke="black" stroke-width="2.07688" stroke-miterlimit="10" stroke-linecap="round"/>
                                             <path d="M15.5037 33.9824V52" stroke="black" stroke-width="2.07688" stroke-miterlimit="10"/>
@@ -236,14 +237,14 @@
                                             <path d="M14.4999 17.49L10.4994 17.1757L18.761 8.92184L16.8757 15.0299L20.8762 15.3441L12.6146 23.6057L14.4999 17.49Z" fill="white" stroke="black" stroke-width="1.66304" stroke-miterlimit="10"/>
                                         </g>
                                         <defs>
-                                            <clipPath id="clip0_1_640">
+                                            <clipPath id="ampule3">
                                                 <rect width="31" height="51.2784" fill="white" transform="translate(0 0.721619)"/>
                                             </clipPath>
                                         </defs>
                                     </svg>
                                     <div class="col">
                                         <h4>
-                                            <b>(un) popular opinion</b><p />
+                                            <b>(un) popular opinion</b><br/>
                                             Banques et Assurances
                                         </h4>
                                     </div>
@@ -263,7 +264,7 @@
                                 </div>
                                 <div class="unpopular_bartle">
                                     <svg class="ampule" width="31" height="52" viewBox="0 0 31 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_1_640)">
+                                        <g clip-path="url(#ampule4)">
                                             <path d="M6.52199 39.2091C6.26142 39.2091 6.00852 39.2091 5.75562 39.2474C5.75562 39.5003 5.75562 39.7532 5.75562 40.0138C5.7637 42.3955 6.71341 44.6774 8.39754 46.3615C10.0817 48.0456 12.3635 48.9953 14.7452 49.0034C14.9981 49.0034 15.251 49.0034 15.5116 48.9651C15.5116 48.7199 15.5499 48.467 15.5499 48.1987C15.5418 45.8104 14.5868 43.5228 12.8944 41.8375C11.202 40.1523 8.91034 39.2071 6.52199 39.2091V39.2091Z" fill="#AFFF00" stroke="black" stroke-width="2.07688" stroke-miterlimit="10" stroke-linecap="round"/>
                                             <path d="M24.5243 37.0709C24.7772 37.0709 25.0301 37.0709 25.2907 37.0709C25.2907 37.3162 25.329 37.5691 25.329 37.8373C25.3331 39.0283 25.1012 40.2083 24.6469 41.3093C24.1925 42.4102 23.5246 43.4103 22.6817 44.2518C21.8388 45.0932 20.8376 45.7594 19.7359 46.2119C18.6342 46.6645 17.4538 46.8943 16.2628 46.8882C16.0022 46.8882 15.7493 46.8882 15.4964 46.8499C15.4964 46.597 15.4581 46.3441 15.4581 46.0835C15.4591 44.8957 15.6946 43.7198 16.1513 42.6233C16.6079 41.5268 17.2766 40.5313 18.119 39.6939C18.9614 38.8565 19.9609 38.1937 21.0601 37.7436C22.1593 37.2935 23.3365 37.0649 24.5243 37.0709V37.0709Z" fill="#AFFF00" stroke="black" stroke-width="2.07688" stroke-miterlimit="10" stroke-linecap="round"/>
                                             <path d="M15.5037 33.9824V52" stroke="black" stroke-width="2.07688" stroke-miterlimit="10"/>
@@ -271,14 +272,14 @@
                                             <path d="M14.4999 17.49L10.4994 17.1757L18.761 8.92184L16.8757 15.0299L20.8762 15.3441L12.6146 23.6057L14.4999 17.49Z" fill="white" stroke="black" stroke-width="1.66304" stroke-miterlimit="10"/>
                                         </g>
                                         <defs>
-                                            <clipPath id="clip0_1_640">
+                                            <clipPath id="ampule4">
                                                 <rect width="31" height="51.2784" fill="white" transform="translate(0 0.721619)"/>
                                             </clipPath>
                                         </defs>
                                     </svg>
                                     <div class="col">
                                         <h4>
-                                            <b>(un) popular opinion</b><p />
+                                            <b>(un) popular opinion</b><br/>
                                             Banques et Assurances
                                         </h4>
                                     </div>
@@ -299,14 +300,14 @@
                 </div>
             </section>
             <section class="categ join" id="join">
-                <img id="j1" src="assets/img/join_1.png" alt="">
-                <img id="j2" src="assets/img/join_2.png" alt="">
-                <img id="j3" src="assets/img/join_3.png" alt="">
-                <img id="j4" src="assets/img/join_4.png" alt="">
+                <img id="j1" src="assets/img/join_1.png" alt="j1">
+                <img id="j2" src="assets/img/join_2.png" alt="j2">
+                <img id="j3" src="assets/img/join_3.png" alt="j3">
+                <img id="j4" src="assets/img/join_4.png" alt="j4">
                 <div class="content">
                     <div class="titles">
-                        <h1>Re <p/> Joignez</h1>
-                        <h2>Notre réseau <p /> de talents</h2>
+                        <h1>Re <br/> Joignez</h1>
+                        <h2>Notre réseau <br /> de talents</h2>
                     </div>
                     <span class="body">
                         Nous encourageons le partage des pratiques et des expériences, le croisement des compétences et des expertises au profit de tous.
@@ -320,7 +321,7 @@
                         </a> 
                     </div>  
                 </div>
-                <img id="jb" src="assets/img/join.svg">                 
+                <img id="jb" src="assets/img/join.svg" alt="jb">                 
             </section>
             <section class="categ contact" id="contact">
                 <div class="titles">
@@ -343,7 +344,7 @@
         <footer>
             <div class="head">
                 <div class="col">
-                    <img src="assets/img/logo.svg" alt="" class="logo">
+                    <img src="assets/img/logo.svg" alt="logo" class="logo">
                     <span class="history">
                         Bartle est un cabinet pluridisciplinaire et indépendant de conseil en management qui aide les décideurs à retrouver l’énergie d’entreprendre.
                     </span>
@@ -356,7 +357,7 @@
                         Bartle est présent sur Paris, Lille, Montpellier, Bordeaux et Marseille
                     </span>
                 </div>
-                <div class="col links_utils">
+                <ul class="col links_utils">
                     <li><a href="#">Le Cabinet Bartle</a></li>
                     <li><a href="#">Bartle in English</a></li>
                     <li><a href="#">Notre expertise</a></li>
@@ -364,15 +365,14 @@
                     <li><a href="#">Notes</a></li>
                     <li><a href="#">Recrutement</a></li>
                     <li><a href="#">Contact</a></li>
-                </div>
+                </ul>
             </div>
-            <div class="legals">
+            <ul class="legals">
                 <li><a href="#">Mentions légales</a></li>
                 <li><a href="#">Déclaration de confidentialité</a></li>
                 <li><a href="#">Politique sur les cookies</a></li>
                 <li><a href="#">Paramétrer les cookies</a></li>
-            </div>
+            </ul>
         </footer>
     </body>
-    <script src="assets/js/app.js"></script>
 </html>

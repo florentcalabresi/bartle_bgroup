@@ -7,7 +7,7 @@
 }
 @font-face {
     font-family: 'HurmeGeometric';
-    font-style: bold;
+    font-style: oblique;
     font-weight: bold;
     src: local('HurmeGeometric'), url('../fonts/HurmeGeometricSans1-Black.woff') format('woff');
 }
@@ -258,7 +258,7 @@ section.about {
 section.about .flex {
     gap: 142px;
 }
-section.about span.left {
+section.about h5.left {
     font-style: normal;
     font-weight: 400;
     font-size: 34px;
@@ -267,7 +267,7 @@ section.about span.left {
     height: 192px;
     display: block;
 }
-section.about span.right {
+section.about h6.right {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -819,14 +819,14 @@ footer .legals li:hover:before {
     section.about {
         padding: 42px 32px;
     }
-    section.about span.left {
+    section.about h5.left {
         font-weight: 800;
         font-size: 20px;
         line-height: 31px;
         width: 338px;
         height: 152px;
     }
-    section.about span.right {
+    section.about h6.right {
         font-size: 14px;
         line-height: 25px;
         width: 327px;
